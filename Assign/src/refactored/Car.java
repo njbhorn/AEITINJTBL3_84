@@ -8,6 +8,10 @@ public class Car {
 	private String colour ;
 	private String doors ;
 	
+	public Car() {
+		
+	}
+	
 	public Car(String... carInfo ) {
 		this.registration = carInfo[0];
 		this.make = carInfo[1];
@@ -45,6 +49,16 @@ public class Car {
 	public void setDoors(String doors) {
 		this.doors = doors;
 	}
+	@Override
+	public String toString() {
+		return String.format( "%s,%s,%s,%s,%s", this.getRegistration()
+											, this.getMake()
+											, this.getEngine()
+											, this.getColour()
+											, this.getDoors()
+											);
+	}
 
+	
 	
 }

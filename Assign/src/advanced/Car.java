@@ -8,6 +8,10 @@ public class Car {
 	private String colour ;
 	private String doors ;
 	
+	public Car () {
+		
+	}
+	
 	public Car(String... carInfo ) {
 		this.registration = carInfo[0];
 		this.make = carInfo[1];
